@@ -62,3 +62,25 @@ body{
 #carouselExample .carousel-item {
     transition: none !important;
 }
+
+
+.gallery {
+    margin: 0 auto;        
+}
+
+.gallery-item {
+    width: 50%;              
+    padding: 8px;            
+    box-sizing: border-box;
+}
+@media (min-width: 576px) {
+    .gallery-item { width: 33.3333%; } 
+}
+
+@media (min-width: 768px) {
+    .gallery-item { width: 25%; }     
+}
+
+.top-marg{
+    margin-top: 100px;
+}
