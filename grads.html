@@ -106,17 +106,24 @@
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
           crossorigin="anonymous"
           ></script>
-         <!-- SCRIPT FOR MASONARY GALLERY-->
-         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-         <script>
-         document.addEventListener('DOMContentLoaded', function() {
-            var elem = document.querySelector('.gallery');
-            new Masonry(elem, {
-                itemSelector: '.gallery-item',
-                gutter: 0,           
-                percentPosition: true  
+          
+          <!-- SCRIPT FOR MASONARY GALLERY-->
+          <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+          <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+          <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var grid = document.querySelector('.gallery');
+            // wait until all images are loaded
+            imagesLoaded( grid, function() {
+                // then initialize Masonry
+                var msnry = new Masonry( grid, {
+                    itemSelector: '.gallery-item',
+                    percentPosition: true,
+                    gutter: 0
                 });
             });
-        </script>
+        });
+    </script>
+
      </body>
 </html>
