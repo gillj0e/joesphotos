@@ -17,14 +17,12 @@ nav{
     transform: scale(1);
   }
   50% {
-    transform: scale(1.02);
+    transform: scale(1.03);
   }
 }
 
 .effect-pulse {
-  /* adjust duration and easing as you like */
   animation: pulse 4s ease-in-out infinite;
-  /* pivot from the center top of the navbar */
   transform-origin: center top;
 }
 
