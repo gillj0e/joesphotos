@@ -1,0 +1,63 @@
+nav{
+    margin: 15px;
+}
+
+@keyframes sway {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(5px) rotate(.4deg); }
+  100% { transform: translateX(0); }
+}
+
+.effect-sway {
+  animation: sway 6s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+.effect-pulse {
+  /* adjust duration and easing as you like */
+  animation: pulse 4s ease-in-out infinite;
+  /* pivot from the center top of the navbar */
+  transform-origin: center top;
+}
+
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.extra-round {
+    border-radius: 25px;
+}
+
+.social-nav-logo{
+    margin-right: 25px;
+}
+
+.navbar-brand{
+    margin: 10px;
+}
+
+.overlay1{
+    margin-top: 0px;
+}
+
+.btn-color1{
+    background-color: rgb(83, 151, 83);
+}
+
+.home-header{
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+#carouselExample .carousel-item {
+    transition: none !important;
+}
