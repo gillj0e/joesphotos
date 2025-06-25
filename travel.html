@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+
+    <title>Travel</title>
+    </head>
+
+    <!-- Body -->
+     <body class="position-relative">
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow extra-round fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logos/logo.png" height="30" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Photos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="grads.html">Grads</a></li>
+                            <li><a class="dropdown-item" href="studio.html">Studio</a></li>
+                            <li><a class="dropdown-item" href="portraits.html">Portraits</a></li>
+                            <li><a class="dropdown-item" href="travel.html">Travel</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <a class="social-nav-logo" href="https://www.instagram.com/joesphoto.s/" target="_blank" rel="noopener noreferrer">
+                        <img src="logos/instagram.png" height="25" alt="instagram logo">
+                    </a>
+                    <a class="social-nav-logo" href="https://www.linkedin.com/in/joedgill/" target="_blank" rel="noopener noreferrer">
+                        <img src="logos/linkedin.png" height="25" alt="linkedin logo">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Main -->
+         <main>
+            <!-- Gallery -->
+            <section id="grads-gallery" class="container-fluid p-0">
+                <div class="gallery gal-marg">
+                    <!-- Thumbnail -->
+                    <div class="gallery-item">
+                        <a href="photos/abby1.jpeg" data-lightbox="myGallery">
+                            <img src="photos/abby1.jpeg" class="img-fluid rounded" alt="…">
+                        </a>
+                    </div>
+                    <!-- Thumbnail -->
+                    <div class="gallery-item">
+                        <a href="photos/RYAN-4786-2 1.png" data-lightbox="myGallery">
+                            <img src="photos/RYAN-4786-2 1.png" class="img-fluid rounded" alt="…">
+                        </a>
+                    </div>
+                    <!-- Thumbnail -->
+                    <div class="gallery-item">
+                        <a href="photos/bella1.jpeg" data-lightbox="myGallery">
+                            <img src="photos/bella1.jpeg" class="img-fluid rounded " alt="…">
+                        </a>
+                    </div>
+                    <!-- Thumbnail -->
+                    <div class="gallery-item">
+                        <a href="photos/umich1.jpeg" data-lightbox="myGallery">
+                            <img src="photos/umich1.jpeg" class="img-fluid rounded" alt="…">
+                        </a>
+                    </div>
+                    <!-- Thumbnail -->
+                    <div class="gallery-item">
+                        <a href="photos/ryan2.jpeg" data-lightbox="myGallery">
+                            <img src="photos/ryan2.jpeg" class="img-fluid rounded" alt="…">
+                        </a>
+                    </div>
+                    <!-- Thumbnail -->
+                    <div class="gallery-item">
+                        <a href="photos/leslie-hannah1.jpeg" data-lightbox="myGallery">
+                            <img src="photos/leslie-hannah1.jpeg" class="img-fluid rounded" alt="…">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+         </main>
+         <!-- Footer -->
+        <footer class="mt-5 mb-0 py-3 position-relative bottom">
+            <div class="container-fluid text-left">
+                <small> &copy; 2025 &middot; Webdesign and Photography by Joe Gill &middot;</small>
+            </div>
+        </footer>
+        
+         <!-- Bootstrap JS bundle -->
+          <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          crossorigin="anonymous"
+          ></script>
+          
+          <!-- SCRIPT FOR MASONARY GALLERY-->
+          <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+          <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+          <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var grid = document.querySelector('.gallery');
+            // wait until all images are loaded
+            imagesLoaded( grid, function() {
+                // then initialize Masonry
+                var msnry = new Masonry( grid, {
+                    itemSelector: '.gallery-item',
+                    percentPosition: true,
+                    gutter: 0
+                });
+            });
+        });
+    </script>
+
+     </body>
+</html>
