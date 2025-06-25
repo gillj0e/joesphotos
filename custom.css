@@ -22,7 +22,7 @@ nav{
     transform: scale(1);
   }
   50% {
-    transform: scale(1.03);
+    transform: scale(1.05);
   }
 }
 
@@ -123,6 +123,15 @@ body{
 }
 
 .text-white{
+    color: white;
+}
+
+.text-green1{
+    color: rgb(39, 116, 56);
+}
+
+.btn-green1{
+    background-color: rgb(39, 116, 56);
     color: white;
 }
 
