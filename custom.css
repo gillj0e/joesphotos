@@ -166,3 +166,7 @@ body{
 .carousel-track > * {
     flex: 0 0 auto;
 }
+
+.text-primary{
+    color: rgb(83, 151, 83);
+}
