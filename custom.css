@@ -1,3 +1,8 @@
+/* GLOBAL */
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 nav{
     margin: 15px;
 }
@@ -115,4 +120,49 @@ body{
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.text-white{
+    color: white;
+}
+
+/* ABOUT */
+.carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: rgb(0, 0, 0);
+   
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    animation: scroll-left 20s linear infinite;
+    padding: 1rem;
+    will-change: transform;
+}
+
+.carousel-track img {
+    height: 300px;
+    aspect-ratio: 3 / 4; 
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes scroll-left {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(-50%);
+    }
+}
+
+
+.carousel-track > * {
+    flex: 0 0 auto;
 }
